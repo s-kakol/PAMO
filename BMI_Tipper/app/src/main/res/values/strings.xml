@@ -4,7 +4,30 @@
    <string name="tip_percentage">15%</string>
    <string name="tip">Tip</string>
    <string name="total">Total</string>
-    <string name="weight">Weight:</string>
+   <string name="weight">Weight:</string>
    <string name="height">Height:</string>
-   <string name="bmi">"Calculated BMI "</string>
+   <string name="bmi">Calculated BMI </string>
+   <string name="button_1">BMI Calculator</string>
+   <string name="button_2">PPM Calculator</string>
+   <string name="button_3">Recipes</string>
+   <string name="cal_weight_input">Weight(kg)</string>
+   <string name="cal_height_input">Height(cm)</string>
+   <string name="cal_age_input">Age(years)</string>
+   <string name="cal_gender_input">Male = 0/Female = 1</string>
+   <string name="cal_calories_calculated">Calculated PPM</string>
+   <string name="gender_male">M</string>
+   <string name="gender_female">F</string>
+   <string name="recipe_1">
+      "Cacio e pepe\n
+      Ingredients: 200g spaghetti, 25g butter, 2tsp whole black peppercorns, 50g parmesan\n
+      Step 1: Cook the pasta for 2 mins less than pack instructions state, in salted boiling water. Meanwhile, melt the butter in a medium frying pan over a low heat, then add the ground black pepper and toast for a few minutes.\n
+      Step 2: Drain the pasta, keeping 200ml of the pasta water. Tip the pasta and 100ml of the pasta water into the pan with the butter and pepper. Toss briefly, then scatter over the parmesan evenly, but don’t stir – wait for the cheese to melt for 30 seconds, then once melted, toss everything well, and stir together. This prevents the cheese from clumping or going stringy and makes a smooth, shiny sauce. Add a splash more pasta water if you need to, to loosen the sauce and coat the pasta. Serve immediately with a good grating of black pepper."
+   </string>
+   <string name="recipe_2">
+      "Kedgeree\n
+      Ingredients: 2tbsp curry powder, 300g basmati rice, 600ml chicken stock, 400g skinless smoked haddock, 100g frozen peas\n
+      Step 1: Heat the oven to 180C/160C fan/gas 4. Heat an ovenproof saucepan or flameproof casserole over a medium heat and toast the curry powder for 1 min. Stir in the rice to coat it in the curry powder, then pour over the stock. Bring to the boil, then lay the haddock on top. Cover. Cook in the oven for 30 mins.\n
+      Step 2: Carefully remove from the oven. Leave to rest for a minute, then stir through the peas while breaking up the haddock and fluffing the rice. Season to taste, then serve.\n
+      Extra: If you have some coriander, roughly chop it and scatter over the finished dish. Eggs aren’t essential, but if you’re having this for brunch, poach eggs in simmering water for 2-3 mins and serve over the kedgeree. Or, boil eggs for 7 mins, then peel and halve before use them to top the kedgeree."
+   </string>
 </resources>
