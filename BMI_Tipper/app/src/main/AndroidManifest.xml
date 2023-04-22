@@ -13,10 +13,16 @@
             android:name=".BmiActivity"
             android:exported="false" />
         <activity
+            android:name=".BmiHistoryActivity"
+            android:exported="false" />
+        <activity
             android:name=".CaloriesActivity"
             android:exported="false" />
         <activity
             android:name=".RecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizActivity"
             android:exported="false" />
         <activity android:name=".MainActivity">
             <intent-filter>

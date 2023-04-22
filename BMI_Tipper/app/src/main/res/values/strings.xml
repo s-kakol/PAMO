@@ -10,6 +10,8 @@
    <string name="button_1">BMI Calculator</string>
    <string name="button_2">PPM Calculator</string>
    <string name="button_3">Recipes</string>
+   <string name="button_4">BMI History</string>
+   <string name="button_5">Health Quiz</string>
    <string name="cal_weight_input">Weight(kg)</string>
    <string name="cal_height_input">Height(cm)</string>
    <string name="cal_age_input">Age(years)</string>
@@ -30,4 +32,10 @@
       Step 2: Carefully remove from the oven. Leave to rest for a minute, then stir through the peas while breaking up the haddock and fluffing the rice. Season to taste, then serve.\n
       Extra: If you have some coriander, roughly chop it and scatter over the finished dish. Eggs aren’t essential, but if you’re having this for brunch, poach eggs in simmering water for 2-3 mins and serve over the kedgeree. Or, boil eggs for 7 mins, then peel and halve before use them to top the kedgeree."
    </string>
+   <string name="quiz_question_1">Are fast-foods bad for your health?</string>
+   <string name="quiz_question_2">Are vegetables good for your health?</string>
+   <string name="quiz_question_3">Are fast foods good for your health?</string>
+   <string name="quiz_question_4">Are vegetables bad for your health?</string>
+   <string name="quiz_question_5">Is eating just before going to bed bad for you?</string>
+   <string name="quiz_question_6">Is eating just before going to bed good for you?</string>
 </resources>

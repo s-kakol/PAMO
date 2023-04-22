@@ -1,58 +1,53 @@
 package com.example.tipper;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
 
-    private Button bmiButton;
-    private Button calorieButton;
-    private Button recipeButton;
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bmiButton = (Button) findViewById(R.id.bmiButton);
-        calorieButton = (Button) findViewById(R.id.calorieButton);
-        recipeButton = (Button) findViewById(R.id.recipeButton);
+        Button bmiButton = findViewById(R.id.bmiButton);
+        Button bmiHistoryButton = findViewById(R.id.bmiHistoryButton);
+        Button calorieButton = findViewById(R.id.calorieButton);
+        Button recipeButton = findViewById(R.id.recipeButton);
+        Button quizButton = findViewById(R.id.quizButton);
 
-        bmiButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivity1();
-            }
-        });
-
-        calorieButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivity2();
-            }
-        });
-        recipeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivity3();
-            }
-        });
+        bmiButton.setOnClickListener(v -> openBmiActivity());
+        bmiHistoryButton.setOnClickListener(v -> openBmiHistoryActivity());
+        calorieButton.setOnClickListener(v -> openCaloriesActivity());
+        recipeButton.setOnClickListener(v -> openRecipeActivity());
+        quizButton.setOnClickListener(v -> openQuizActivity());
     }
 
-    public void openActivity1() {
+    public void openBmiActivity() {
         Intent intent = new Intent(this, BmiActivity.class);
         startActivity(intent);
     }
-    public void openActivity2() {
+
+    public void openCaloriesActivity() {
         Intent intent = new Intent(this, CaloriesActivity.class);
         startActivity(intent);
     }
-    public void openActivity3() {
+
+    public void openRecipeActivity() {
         Intent intent = new Intent(this, RecipeActivity.class);
+        startActivity(intent);
+    }
+
+    public void openBmiHistoryActivity() {
+        Intent intent = new Intent(this, BmiHistoryActivity.class);
+        startActivity(intent);
+    }
+
+    public void openQuizActivity() {
+        Intent intent = new Intent(this, QuizActivity.class);
         startActivity(intent);
     }
 } 

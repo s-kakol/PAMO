@@ -1,18 +1,14 @@
 package com.example.tipper;
 
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class CaloriesActivity extends AppCompatActivity {
 
@@ -27,37 +23,38 @@ public class CaloriesActivity extends AppCompatActivity {
     private TextView genderTextView;
     private TextView totalTextView;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calories);
 
-        weightTextView = (TextView) findViewById(R.id.weightTextView);
-        heightTextView = (TextView) findViewById(R.id.heightTextView);
-        ageTextView = (TextView) findViewById(R.id.ageTextView);
-        genderTextView = (TextView) findViewById(R.id.genderTextView);
-        totalTextView = (TextView) findViewById(R.id.totalTextView);
-        totalTextView.setText(String.format(0 + ""));
+        weightTextView = findViewById(R.id.weightTextView);
+        heightTextView = findViewById(R.id.heightTextView);
+        ageTextView = findViewById(R.id.ageTextView);
+        genderTextView = findViewById(R.id.genderTextView);
+        totalTextView = findViewById(R.id.totalTextView);
+        totalTextView.setText(0 + "");
 
         EditText weightEditText =
-                (EditText) findViewById(R.id.weightEditText);
+                findViewById(R.id.weightEditText);
         weightEditText.addTextChangedListener(weightEditTextWatcher);
 
         EditText heightEditText =
-                (EditText) findViewById(R.id.heightEditText);
+                findViewById(R.id.heightEditText);
         heightEditText.addTextChangedListener(heightEditTextWatcher);
 
         EditText ageEditText =
-                (EditText) findViewById(R.id.ageEditText);
+                findViewById(R.id.ageEditText);
         ageEditText.addTextChangedListener(ageEditTextWatcher);
 
         EditText genderEditText =
-                (EditText) findViewById(R.id.genderEditText);
+                findViewById(R.id.genderEditText);
         genderEditText.addTextChangedListener(genderEditTextWatcher);
     }
 
     private void calculate() {
-        double result = 0.00;
+        double result;
 
         if (gender == 0) {
             //male calculation
@@ -135,7 +132,7 @@ public class CaloriesActivity extends AppCompatActivity {
                                   int before, int count) {
 
             try {
-                age = (int) (Integer.parseInt(s.toString()));
+                age = Integer.parseInt(s.toString());
                 ageTextView.setText(String.format(age + ""));
             } catch (NumberFormatException e) {
                 age = 0;
@@ -161,7 +158,7 @@ public class CaloriesActivity extends AppCompatActivity {
                                   int before, int count) {
 
             try {
-                gender = (int) (Integer.parseInt(s.toString()));
+                gender = Integer.parseInt(s.toString());
                 genderTextView.setText(String.format(getGender(gender) + ""));
             } catch (NumberFormatException e) {
                 gender = 0;
